@@ -38,16 +38,16 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
 
-        int peopleY = 12_000_000;
+        int populationY = 12_000_000;
         int fertilityFor1000 = 17;
         int mortalityFor1000 = 8;
-        int totalYear = 0;
+        int year = 0;
 
-        while (totalYear < 10) {
-            totalYear++;
-            peopleY = peopleY + (peopleY / 1000 * (fertilityFor1000 - mortalityFor1000));
+        while (year < 10) {
+            year++;
+            populationY = populationY + (populationY / 1000 * (fertilityFor1000 - mortalityFor1000));
 
-            System.out.println("Год " + totalYear + ", численность населения составляет " + peopleY);
+            System.out.println("Год " + year + ", численность населения составляет " + populationY);
         }
     }
 }
